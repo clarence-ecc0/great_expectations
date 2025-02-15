@@ -1,0 +1,109 @@
+html{
+  height: 100%;
+}
+body{
+  background-color: rgb(67, 62, 53);
+  background-image: url(/imgs/jed-owen-tZwcwRw6x1c-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  width: 1024px;
+}
+header{
+  height: 118px;
+  text-align: center;
+}
+nav{
+  background-color: rgba(0, 0, 0, 0.533);
+  /* height: 40px; */
+  text-align: center;
+  padding:14px;
+}
+main{
+  height: 550px;
+  margin-top: 30px;
+  background-color: rgba(0, 0, 0, 0.465);
+  text-align: center;
+  padding-top: 80px;
+  padding-left: 240px;
+  padding-right: 240px;
+  border-radius: 70px;
+} 
+footer{
+  margin-top: 40px;
+  background-color: rgba(0, 0, 0, 0.767);
+  text-align: center;
+  padding: 15px;
+}
+header img{
+  width: 210px;
+}
+main h1{
+  font-size: 84px;
+  color: white;
+  font-family: Montserrat, sans-serif;
+}
+main p{
+  color: white;
+  font-size: 18px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.book{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-family: montserrat;
+  text-transform: uppercase;
+}
+main a{
+  color: white;
+  font-family: montserrat;
+  text-transform: lowercase;
+}
+main button{
+ background-color: beige;
+ width: 140px;
+padding: 5px;
+ border-radius: 10px;
+}
+/* main button :hover{
+  background-color: aqua;
+  transition: 0.5s;
+} */
+nav a{
+  text-decoration: none;
+  color: white;
+  font-family: montserrat;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+footer h6{
+  color: white;
+  font-size: 15px;
+  font-family: Montserrat;
+}
+label{
+  font-family: montserrat;
+  color: white;
+  font-size: 12px;
+}
+fieldset{
+  width: 100px;
+  background-color: darkred;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: dotted;
+}
+.f2{
+  margin-top: 10px;
+}
+legend{
+  font-family: montserrat;
+  font-size: 12px;
+  color: white;   
+}
