@@ -41,12 +41,10 @@ a{
 }
 .grid-flex1{
     flex-direction: column;  
-    border: dashed;
     width: max-content;
     margin-bottom: 130px;
 }
 .grid-flex2{
-    border: dotted;
     flex-direction: row;
     width: max-content;
     margin-bottom: 130px;
