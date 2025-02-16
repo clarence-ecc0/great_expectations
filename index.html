@@ -5,28 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="/css/portfolio.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Noto+Sans+TC:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <div class="nav">
-        <a href="">Item1</a>
-        <a href="">Item2</a>
-        <a href="">Item3</a>
+        <a href="#Bio">Bio</a>
+        <a href="#Projects">Projects</a>
+        <a href="#Contact">Contact</a>
       </div>
     </header>
     <div class="circle1"></div>
     <div class="circle2"></div>
-    <div class="grid-flex">
+    <div class="grid-flex" id="Bio">
       <div class="grid-flex1">
         <div class="item1"></div>
       </div>
       <div class="grid-flex2">
         <div class="item2"></div>
         <div class="item3"></div>
-        <div class="item4"></div>
+        <div class="item4">
+          <h4>Landscape mode on phones please</h4>
+          <img
+            class="mobile_advice"
+            src="/imgs/1613769_iphone_mobile_sms_text_icon.png"
+            alt=""
+          />
+        </div>
       </div>
     </div>
-    <div class="flexbox1">
+    <div class="flexbox1" id="Projects">
       <div class="flex1">
         <a href="#">Learn more</a>
       </div>
@@ -48,7 +61,7 @@
     </div>
     <div class="message">
       <h3>Leave a message</h3>
-      <div class="input1">
+      <div class="input1" id="Contact">
         <input id="name" type="text" placeholder="Name" />
         <input id="message" type="text" placeholder="Message..." />
         <a href="#">Submit</a>
