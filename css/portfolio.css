@@ -3,7 +3,7 @@ html{
 }
 body{
     background-color: #050A30;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 .nav{
     position: sticky;
@@ -15,6 +15,7 @@ body{
     top: 10px;
     margin-top: 40px;
 }
+
 a{
     margin-left: 20px;
     margin-right: 20px;
@@ -32,15 +33,18 @@ a{
     cursor: pointer;
 }
 .grid{
+    display: flex;
+    flex-wrap: wrap;
+}
+.grid-flex{
     border-radius: 10px;
-    position: relative;
     margin-left: auto;
     margin-right: auto;
     margin-top: 130px;
     width: max-content;
     display: grid;
-    grid-template-columns: 500px 500px;
-    grid-template-rows: 200px 200px 200px 200px;
+    grid-template-columns: 500px 300px;
+    grid-template-rows: repeat(4, 200px);
     border: hidden;
 }
 .item1{
@@ -70,22 +74,21 @@ a{
     margin-bottom: 20px;
 }
 .flexbox1{
-    position: relative;
+    /* position: relative; */
     display: flex;
+    /* max-width: 600px; */
+    flex-wrap: wrap;
     justify-content: center;
     flex-direction: row;
-    margin-left: 50px;
+    max-width: 700px;
     column-gap: 30px;
+    row-gap: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
-.flexbox2{ 
-    margin-top: 30px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    margin-left: 50px;
-    column-gap: 30px;
-}
+
+
 .flex1{
     border-radius: 20px;
     background-color: gray;
@@ -125,11 +128,11 @@ a{
     width: 200px;
 }
 .flexbox1 a{
-    position: relative;
-    /* margin-left: 20px;
-    margin-right: 20px; */
-    left: 14px;
-    top: 180px;
+    display: flex;
+    width: max-content;
+    margin-top: 170px;
+    margin-left: auto;
+    margin-right: auto;
     font-family: Montserrat;
     text-decoration: none;
     color: white;
@@ -144,11 +147,11 @@ a{
     cursor: pointer;
 }
 .flexbox2 a{
-    position: relative;
-    /* margin-left: 20px;
-    margin-right: 20px; */
-    left: 14px;
-    top: 180px;
+    display: flex;
+    width: max-content;
+    margin-top: 170px;
+    margin-left: auto;
+    margin-right: auto;
     font-family: Montserrat;
     text-decoration: none;
     color: white;
@@ -169,45 +172,53 @@ a{
     color: white;
     text-align: center;
 }
-#name{
-    position: relative;
-    margin-top: 40px;
-    left: 360px;
-    height: 40px;
-    width: 300px;
+.input1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 30px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
     border-radius: 5px;
     border: hidden;
 }
+#name{
+    width: 200px;
+    height: 40px;
+    border-radius: 30px;
+}
+
 #message{
-    position: relative;
-    top: 80px;
-    left: 50px;
     height: 40px;
     padding-bottom: 150px;
     width: 500px;
-    border-radius: 5px;
+    border-radius: 30px;
     border: hidden;
 }
 .message a{
     position: relative;
-    top: 300px;
-    right: 480px;
+    width: max-content;
+    text-align: center;
 }
-footer{
-    right: 7px;
-    width: 1500px;
-    height: 50px;
-    background-color: rgba(128, 128, 128, 0.445);
-    position: relative;
-    top: 190px;
+.footer{
+    margin-top: 40px;
+    display: flex;
+    width: 100%;
+    height: 40px;
+    flex-direction: column;
+    background-color: gray;
+    align-items: center;
+    justify-content: center;
+
 }
-footer h6{
-    position: relative;
+
+.footer h6{
+    text-align: center;
     color: white;
     font-family: Montserrat;
-    font-size: 15px;
-    margin-left: 550px;
-    top: 16px;
+    font-size: 10px;
 }
 .circle1{
     z-index: -1;
@@ -270,7 +281,7 @@ footer h6{
     75%{
         rotate: 90deg;
         translate: 50px 320px;
-        scale: 1.5;
+        scale: 1.3;
     }
     55%{
         rotate: 180deg;
@@ -279,7 +290,7 @@ footer h6{
     30%{
         rotate: 270deg;
         translate: -300px -100px;
-        scale: 1.2;
+        scale: 1.1;
     }
     0%{
         rotate: 360deg;
