@@ -216,6 +216,7 @@ a:hover{
     width: 600px;
     border-radius: 5px;
     border: hidden;
+    flex-wrap: wrap;
 }
 #name{
     padding-left: 20px;
