@@ -54,7 +54,7 @@ a{
     height: 640px;
     width: 400px;
     border-radius: 25px;
-    background-color: grey;
+    background-color: transparent;
     border: 2px solid white;
 }
 .item2{
